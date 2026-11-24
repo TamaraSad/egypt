@@ -81,7 +81,7 @@
   }
 
   /* Промокод: меняется здесь, подставляется во все [data-promo] */
-  var PROMO_CODE = 'EGYPTONEX20';
+  var PROMO_CODE = 'GOLD20';
   document.querySelectorAll('[data-promo]').forEach(function (el) { el.textContent = PROMO_CODE; });
 
   /* Кнопка «Copy» */

@@ -8,7 +8,7 @@ import os
 
 DOMAIN = "https://example.com"
 AFF = "https://reffpa.com/L?tag=d_3686639m_1599c_&amp;site=3686639&amp;ad=1599&amp;r=registration"
-PROMO = "EGYPTONEX20"
+PROMO = "GOLD20"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
