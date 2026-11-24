@@ -60,12 +60,6 @@ def head(prefix, title, desc, canonical, ld):
     </symbol>
   </svg>
 
-  <div class="legal-bar" role="note">
-    <div class="container legal-bar__inner">
-      <span class="age-badge" aria-label="Adults only">18+</span>
-      <p>Bet responsibly. This page contains affiliate links. T&amp;Cs apply to all offers.</p>
-    </div>
-  </div>
 
   <header class="site-header" id="top">
     <div class="container site-header__inner">
