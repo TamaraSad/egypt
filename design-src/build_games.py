@@ -77,7 +77,7 @@ def head(prefix, title, desc, canonical, ld, current="games"):
           <li><a href="{prefix}">Home</a></li>
           <li><a href="{prefix}registration/">Sign Up</a></li>
           <li><a href="{prefix}promo-code/"{cur("promo")}>Promo Code</a></li>
-          <li><a href="{prefix}app/"{cur("app")}>App</a></li>
+          <li class="has-sub"><a href="{prefix}app/"{cur("app")}>App</a><button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show app pages"><span aria-hidden="true">▾</span></button><ul class="sub-menu"><li><a href="{prefix}app/android/"{cur("android")}>Android</a></li><li><a href="{prefix}app/ios/"{cur("ios")}>iPhone</a></li></ul></li>
           <li><a href="{prefix}#login">Login</a></li>
           <li><a href="{prefix}games/"{cur("games")}>Games</a></li>
         </ul>

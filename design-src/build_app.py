@@ -165,23 +165,6 @@ def hub():
         ("Can I use the promo code in the app?", f"Yes. The sign-up form in the app has a promo code field. Enter {PROMO} before you tap “Register”."),
     ]
     ld = {"@context": "https://schema.org", "@graph": [crumbs_ld([("1xBet Nigeria", "/"), ("App", url)]), faq_ld(fq, DOMAIN + url)]}
-    devices = f"""
-    <section class="section" id="devices" aria-labelledby="devices-title">
-      <div class="container">
-        <h2 id="devices-title">Choose your phone</h2>
-        <div class="game-grid game-grid--2">
-          <a class="game-card" href="android/">
-            <img src="{p}assets/img/app-android-1x.webp" alt="Android phone installing the 1xBet app from the official site" width="600" height="520" loading="lazy" decoding="async">
-            <span class="game-card__body"><b>1xBet app for Android</b><span>Download from the official site — via Google Play or as an APK file — and install in a couple of minutes.</span><span class="chips"><em>Free</em><em>Android</em><em>APK</em></span><span class="game-card__more">Android download guide →</span></span>
-          </a>
-          <a class="game-card" href="ios/">
-            <img src="{p}assets/img/app-ios-1x.webp" alt="iPhone showing the 1xBet NG app page in the App Store" width="600" height="520" loading="lazy" decoding="async">
-            <span class="game-card__body"><b>1xBet app for iPhone</b><span>Install “1xBet NG ― Betting &amp; Casino” from the App Store. Requires iOS 15.0 or later.</span><span class="chips"><em>Free</em><em>App Store</em><em>iOS 15+</em></span><span class="game-card__more">iPhone download guide →</span></span>
-          </a>
-        </div>
-      </div>
-    </section>
-"""
     compare = """
     <section class="section section--alt" id="compare" aria-labelledby="compare-title">
       <div class="container">
@@ -220,7 +203,7 @@ def hub():
     body = (hero(p, [("1xBet Nigeria", p), ("App", None)], "1xBet App Nigeria: Download for Android & iPhone",
                  "The 1xBet app puts the full sportsbook and casino on your phone — live betting, push notifications and Naira payments. It’s free on Android and iPhone, and you can use the same account as on the website.",
                  "home-app", "Two phones with the 1xBet app: live NPFL match with odds and a casino lobby with crash games", 580, 520, "Get the 1xBet App")
-            + devices + compare + feats + reg + faq("1xBet app FAQ", fq) + cta("Get the 1xBet app", "Get the 1xBet App"))
+            + compare + feats + reg + faq("1xBet app FAQ", fq) + cta("Get the 1xBet app", "Get the 1xBet App"))
     return head(p, "1xBet App Nigeria: Download for Android & iPhone (iOS)",
                 "Download the 1xBet app in Nigeria for Android and iPhone: how to get it safely, key features, app vs mobile site and signing up with a promo code.",
                 url, ld, current="app") + body + foot(p)
@@ -295,12 +278,10 @@ def android():
                 ("Can’t log in", f'Check your login details or reset your password. See the <a href="{p}#login">login guide</a>.'),
             ], alt=True)
             + faq("1xBet Android app FAQ", fq)
-            + related(p, [("1xBet app for iPhone", "Install 1xBet NG from the App Store. Requires iOS 15.0 or later.", "../ios/", "app-ios"),
-                          ("1xBet app overview", "Features, app vs mobile site and how to sign up in the app.", "../", "home-app")])
             + cta("Get the 1xBet app for Android", "Download for Android"))
     return head(p, "1xBet APK Download Nigeria: Android App Install Guide",
                 "1xBet app for Android in Nigeria: how to download the 1xBet APK safely from the official site, allow the install, update the app and fix common install errors.",
-                url, ld, current="app") + body + foot(p)
+                url, ld, current="android") + body + foot(p)
 
 
 # ---------------- iOS ----------------
@@ -370,12 +351,10 @@ def ios():
                 ("Notifications not showing", "Allow notifications for 1xBet in Settings → Notifications."),
             ], alt=True)
             + faq("1xBet iPhone app FAQ", fq)
-            + related(p, [("1xBet app for Android", "Download via Google Play or the 1xBet APK from the official site.", "../android/", "app-android"),
-                          ("1xBet app overview", "Features, app vs mobile site and how to sign up in the app.", "../", "home-app")])
             + cta("Get the 1xBet app for iPhone", "Download for iPhone"))
     return head(p, "1xBet App iOS Nigeria: Download for iPhone & iPad",
                 "1xBet app for iPhone in Nigeria: get 1xBet NG from the App Store, iOS 15.0+ requirements, fixes if the app isn’t showing and sign-up with a promo code.",
-                url, ld, current="app") + body + foot(p)
+                url, ld, current="ios") + body + foot(p)
 
 
 if __name__ == "__main__":

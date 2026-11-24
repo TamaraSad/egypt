@@ -28,6 +28,23 @@
     });
   }
 
+  /* Выпадающее меню App */
+  document.querySelectorAll('.has-sub').forEach(function (item) {
+    var btn = item.querySelector('.sub-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = !item.classList.contains('is-open');
+      item.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.has-sub.is-open').forEach(function (item) {
+      if (!item.contains(e.target)) { item.classList.remove('is-open'); item.querySelector('.sub-toggle').setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
   /* Тень шапки и кнопка «наверх» */
   var ticking = false;
   function onScroll() {
