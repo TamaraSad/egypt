@@ -2,3 +2,4 @@
 Thumbs.db
 *.log
 node_modules/
+design-src/out/*@2x.png

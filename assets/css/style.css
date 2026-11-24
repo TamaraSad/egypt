@@ -474,3 +474,13 @@ p { margin: 0 0 1em; }
 .section__head { grid-template-columns: minmax(0, 1fr) minmax(0, 420px); }
 @media (max-width: 1000px) { .section__fig { max-width: 400px; margin-inline: auto; } }
 @media (max-width: 600px) { .section__fig { max-width: 320px; } }
+
+/* ===== Пример расчёта отыгрыша ===== */
+.example-box { margin-top: 14px; background: #fff; border: 1px solid var(--c-border); border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow); }
+.example-box__label { margin: 0 0 8px; font-size: .82rem; font-weight: 700; color: var(--c-muted); }
+.example-list { list-style: none; margin: 0; padding: 0; }
+.example-list li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px dashed var(--c-border); }
+.example-list li:last-child { border-bottom: 0; }
+.example-list span { color: var(--c-muted); }
+.example-list b { text-align: end; color: var(--c-navy); }
+.example-list li:nth-child(4) b { color: var(--c-accent-dark); font-size: 1.1rem; }

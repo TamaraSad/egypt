@@ -23,17 +23,17 @@ Login,1xbet ng login,navigational,medium,/ #login
 Login,1xbet sign in,navigational,medium,/ #login
 Login,1xbet login with phone number,navigational,low,/ #login
 Login,1xbet forgot password,informational,low,/login/ (inner page)
-Promo code,1xbet promo code,transactional,high,/ #promo → /promo-code/
-Promo code,1xbet promo code nigeria,transactional,high,/ #promo
-Promo code,1xbet promo code today,transactional,medium,/ #promo
-Promo code,1xbet promo code for registration,transactional,medium,/ #promo
-Promo code,1xbet bonus code,transactional,medium,/ #promo
-Promo code,how to use 1xbet promo code,informational,medium,/promo-code/ (inner page)
-Bonus,1xbet welcome bonus,transactional,high,/ #promo
-Bonus,1xbet welcome bonus nigeria,transactional,medium,/ #promo
-Bonus,1xbet first deposit bonus,transactional,medium,/ #promo
-Bonus,1xbet free bet,transactional,medium,/ #promo
-Bonus,1xbet bonus terms,informational,low,/ #promo
+Promo code,1xbet promo code,transactional,high,/promo-code/
+Promo code,1xbet promo code nigeria,transactional,high,/promo-code/
+Promo code,1xbet promo code today,transactional,medium,/promo-code/
+Promo code,1xbet promo code for registration,transactional,medium,/promo-code/
+Promo code,1xbet bonus code,transactional,medium,/promo-code/
+Promo code,how to use 1xbet promo code,informational,medium,/promo-code/
+Bonus,1xbet welcome bonus,transactional,high,/promo-code/
+Bonus,1xbet welcome bonus nigeria,transactional,medium,/promo-code/
+Bonus,1xbet first deposit bonus,transactional,medium,/promo-code/
+Bonus,1xbet free bet,transactional,medium,/promo-code/
+Bonus,1xbet bonus terms,informational,low,/promo-code/
 App,1xbet app,transactional,high,/ #app → /app/
 App,1xbet app download,transactional,high,/ #app
 App,1xbet apk,transactional,high,/ #app

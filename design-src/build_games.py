@@ -75,7 +75,7 @@ def head(prefix, title, desc, canonical, ld):
         <ul>
           <li><a href="{prefix}">Home</a></li>
           <li><a href="{prefix}registration/">Sign Up</a></li>
-          <li><a href="{prefix}#promo">Promo Code</a></li>
+          <li><a href="{prefix}promo-code/">Promo Code</a></li>
           <li><a href="{prefix}#app">App</a></li>
           <li><a href="{prefix}#login">Login</a></li>
           <li><a href="{prefix}games/" aria-current="page">Games</a></li>
@@ -205,8 +205,8 @@ GAMES = {
         "name": "Chicken Road",
         "img": "game-chicken-road.svg",
         "img_alt": "Chicken crossing a road with multiplier markers on each lane and cars driving by",
-        "title": "Chicken Road on 1xBet Nigeria: How to Play, Difficulty Levels & RTP",
-        "desc": "How to play Chicken Road on 1xBet Nigeria: rules, 4 difficulty levels, up to 98% RTP, cash-out and safe play tips. 18+.",
+        "title": "Chicken Road on 1xBet Nigeria: How to Play, Levels & RTP",
+        "desc": "How to play Chicken Road on 1xBet Nigeria: game rules, 4 difficulty levels, up to 98% RTP, when to cash out and safe play tips. 18+.",
         "h1": "Chicken Road on 1xBet Nigeria: How to Play and Pick a Difficulty",
         "lead": "Chicken Road is a quick casino game where you help a chicken cross a busy road. Every lane it survives raises the multiplier — cash out whenever you like, or risk one more step.",
         "short": "Guide a chicken across a busy road. Every safe lane raises the multiplier — cash out or risk one more step.",
@@ -248,7 +248,7 @@ GAMES = {
         "img": "game-tower-rush.svg",
         "img_alt": "Crane stacking floors on a tower with an x3.20 multiplier and a cash-out button",
         "title": "Tower Rush on 1xBet Nigeria: How to Play, Rules & RTP",
-        "desc": "How to play Tower Rush on 1xBet Nigeria: how the tower-building crash game works, RTP, cash-out and safe play tips. 18+.",
+        "desc": "How to play Tower Rush on 1xBet Nigeria: how the tower-building crash game works, its RTP, when to cash out and safe play tips. 18+.",
         "h1": "Tower Rush on 1xBet Nigeria: How to Play the Tower-Building Game",
         "lead": "In Tower Rush a crane stacks floor after floor on a tower, and every new floor pushes the multiplier higher. Cash out while the tower stands — if it collapses first, the round is lost.",
         "short": "A crane stacks floor after floor. Each floor raises the multiplier — cash out before the tower falls.",
@@ -521,7 +521,7 @@ def hub_page():
       </div>
     </section>
 """
-    return head(prefix, "1xBet Games Nigeria: Aviator, Chicken Road & Tower Rush", "Guides to popular 1xBet casino games in Nigeria: Aviator, Chicken Road and Tower Rush — rules, RTP and how to play. 18+.", url, ld) + body + foot(prefix)
+    return head(prefix, "1xBet Games Nigeria: Aviator, Chicken Road & Tower Rush", "Guides to popular 1xBet casino games in Nigeria: Aviator, Chicken Road and Tower Rush — rules, RTP, tips and how to play each one. 18+.", url, ld) + body + foot(prefix)
 
 
 def write(path, content):
