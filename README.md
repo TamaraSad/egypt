@@ -4,13 +4,20 @@ Static landing page (HTML/CSS/JS), English, for Nigerian users.
 
 ## Structure
 ```
-index.html                    landing page
+index.html                    landing page (English)
+pcm/index.html                Nigerian Pidgin version
 assets/css/style.css          styles
 assets/js/main.js             menu, FAQ, promo code + copy button
 assets/img/*.svg              illustrations
 seo/keywords-nigeria.csv      semantic core: cluster, keyword, intent, priority, target page
 favicon.svg, robots.txt, sitemap.xml
 ```
+
+## Языковые версии
+- `/` — английский (`lang="en-NG"`), `/pcm/` — нигерийский пиджин (`lang="pcm"`).
+- Переключатель EN / Pidgin — в шапке обеих страниц.
+- hreflang между версиями не прописан: Google принимает только двухбуквенные коды ISO 639-1, а у пиджина есть только трёхбуквенный `pcm`. Обе страницы есть в sitemap.xml и связаны переключателем.
+- Правки текста делаются в обоих файлах.
 
 ## Где что менять
 - **Промокод** — одна строка в `assets/js/main.js` (`PROMO_CODE`). В HTML он тоже прописан как запасной вариант для браузеров без JS.

@@ -371,3 +371,11 @@ p { margin: 0 0 1em; }
   .promo-card__code { border-inline-start: 0; border-top: 1px dashed rgba(255,255,255,.25); }
   .hero__actions .btn--lg { width: 100%; }
 }
+
+/* ===== Переключатель языка ===== */
+.lang-switch { display: inline-flex; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; padding: 3px; margin-inline-end: 12px; flex-shrink: 0; }
+.lang-switch a { padding: 5px 12px; border-radius: 999px; color: #dfe7f2; text-decoration: none; font-weight: 700; font-size: .85rem; line-height: 1.4; }
+.lang-switch a:hover { color: #fff; }
+.lang-switch a[aria-current="page"] { background: #fff; color: var(--c-navy); }
+@media (max-width: 1000px) { .lang-switch { margin-inline-start: auto; } }
+@media (max-width: 380px) { .lang-switch a { padding: 5px 9px; } }

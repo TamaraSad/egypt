@@ -9,7 +9,7 @@
   /* Мобильное меню */
   function setMenu(open) {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    toggle.setAttribute('aria-label', open ? (toggle.dataset.close || 'Close menu') : (toggle.dataset.open || 'Open menu'));
     nav.classList.toggle('is-open', open);
   }
 
@@ -67,10 +67,11 @@
   /* Кнопка «Copy» */
   document.querySelectorAll('[data-copy]').forEach(function (btn) {
     btn.addEventListener('click', function () {
+      var label = btn.textContent;
       var done = function () {
-        btn.textContent = 'Copied!';
+        btn.textContent = btn.dataset.copied || 'Copied!';
         btn.classList.add('is-copied');
-        setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('is-copied'); }, 1800);
+        setTimeout(function () { btn.textContent = label; btn.classList.remove('is-copied'); }, 1800);
       };
       var fallback = function () {
         var t = document.createElement('textarea');
