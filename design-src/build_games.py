@@ -77,6 +77,7 @@ def head(prefix, title, desc, canonical, ld, current="games"):
           <li><a href="{prefix}">Home</a></li>
           <li><a href="{prefix}registration/">Sign Up</a></li>
           <li><a href="{prefix}promo-code/"{cur("promo")}>Promo Code</a></li>
+          <li><a href="{prefix}bonus/"{cur("bonus")}>Bonus</a></li>
           <li class="has-sub"><a href="{prefix}app/"{cur("app")}>App</a><button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show app pages"><span aria-hidden="true">▾</span></button><ul class="sub-menu"><li><a href="{prefix}app/android/"{cur("android")}>Android</a></li><li><a href="{prefix}app/ios/"{cur("ios")}>iPhone</a></li></ul></li>
           <li><a href="{prefix}login/"{cur("login")}>Login</a></li>
           <li class="has-sub"><a href="{prefix}games/"{cur("games")}>Games</a><button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show game pages"><span aria-hidden="true">▾</span></button><ul class="sub-menu"><li><a href="{prefix}games/aviator/"{cur("aviator")}>Aviator</a></li><li><a href="{prefix}games/chicken-road/"{cur("chicken-road")}>Chicken Road</a></li><li><a href="{prefix}games/tower-rush/"{cur("tower-rush")}>Tower Rush</a></li></ul></li>
@@ -123,6 +124,7 @@ def foot(prefix, scenes=False, rg=None):
       <nav aria-label="Site links">
         <ul>
           <li><a href="{prefix}">Home</a></li>
+          <li><a href="{prefix}bonus/">Bonus</a></li>
           <li><a href="{prefix}app/">App</a></li>
           <li><a href="{prefix}games/">Games</a></li>
           <li><a href="/about/">About</a></li>

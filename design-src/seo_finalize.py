@@ -17,7 +17,7 @@ DATE = "2026-11-24"
 SITE = "1xBet Nigeria Guide"
 PAGES = ["index.html", "registration/index.html", "promo-code/index.html", "games/index.html",
          "games/aviator/index.html", "games/chicken-road/index.html", "games/tower-rush/index.html",
-         "app/index.html", "app/android/index.html", "app/ios/index.html", "login/index.html"]
+         "app/index.html", "app/android/index.html", "app/ios/index.html", "login/index.html", "bonus/index.html"]
 HERO_SIZES = "(max-width: 600px) 90vw, (max-width: 1000px) 460px, 560px"
 FIG_SIZES = "(max-width: 600px) 320px, (max-width: 1000px) 400px, 420px"
 
@@ -50,7 +50,7 @@ def process(path):
     def pic(m):
         prefix, name = m.group(1), m.group(2)
         w2, w1 = dims(name)
-        hero = name in ("home-hero", "signup-mockup", "app-android", "app-ios") or (name == "home-promo" and path.startswith("promo-code")) or (name == "home-app" and path.startswith("app")) or (name == "home-login" and path.startswith("login"))
+        hero = name in ("home-hero", "signup-mockup", "app-android", "app-ios", "bonus-wallet") or (name == "home-promo" and path.startswith("promo-code")) or (name == "home-app" and path.startswith("app")) or (name == "home-login" and path.startswith("login"))
         sizes = HERO_SIZES if hero else FIG_SIZES
         return (f'<source type="image/webp" srcset="{prefix}assets/img/{name}-1x.webp {w1}w, '
                 f'{prefix}assets/img/{name}.webp {w2}w" sizes="{sizes}">')

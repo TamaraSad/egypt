@@ -10,7 +10,7 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = os.path.join(ROOT, "assets", "img")
 OUT = os.path.join(ROOT, "design-src", "out")
-MOCKS = ["home-hero", "home-promo", "home-app", "home-login", "signup-mockup", "app-android", "app-ios"]
+MOCKS = ["home-hero", "home-promo", "home-app", "home-login", "signup-mockup", "app-android", "app-ios", "bonus-wallet"]
 
 
 def kb(path):

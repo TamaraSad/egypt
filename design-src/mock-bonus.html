@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="mock-base.css">
+<style>
+  body { width: 600px; height: 520px; }
+  .phone { left: 180px; top: 14px; width: 240px; height: 494px; transform: rotate(-3deg); }
+  .hdr { background: #0b1d36; color: #fff; padding: 4px 16px 16px; }
+  .hdr small { font-size: 10px; color: #9fb0c6; font-weight: 600; }
+  .bal { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 4px; }
+  .bal b { font-size: 22px; font-weight: 800; }
+  .bal span { font-size: 10px; background: rgba(22,183,122,.2); color: #7ff0c2; padding: 3px 8px; border-radius: 999px; font-weight: 700; }
+  .bd { padding: 12px 14px; }
+  .bcard { border-radius: 16px; padding: 14px; color: #fff; background: radial-gradient(120% 120% at 100% 0%, #1fcf8b 0%, #0e8a5b 45%, #0b5c3a 100%); }
+  .bcard small { font-size: 9.5px; font-weight: 700; opacity: .85; letter-spacing: .04em; text-transform: uppercase; }
+  .bcard b { display: block; font-size: 22px; font-weight: 800; margin-top: 2px; }
+  .bcard p { font-size: 10px; opacity: .9; margin-top: 2px; }
+  .prog { height: 8px; border-radius: 4px; background: rgba(255,255,255,.25); margin: 12px 0 6px; overflow: hidden; }
+  .prog i { display: block; width: 64%; height: 100%; background: #fff; border-radius: 4px; }
+  .pl { display: flex; justify-content: space-between; font-size: 10px; font-weight: 700; }
+  .rules { margin-top: 12px; background: #fff; border-radius: 12px; padding: 10px 12px; border: 1px solid #e2e8f0; }
+  .rules p { display: flex; justify-content: space-between; font-size: 10.5px; color: #3b4a5c; padding: 4px 0; border-bottom: 1px dashed #e2e8f0; }
+  .rules p:last-child { border-bottom: 0; }
+  .rules b { color: #0b1d36; }
+  .list { margin-top: 12px; display: grid; gap: 8px; }
+  .item { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 9px 10px; }
+  .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-weight: 800; font-size: 13px; flex-shrink: 0; }
+  .item b { display: block; font-size: 11.5px; } .item small { font-size: 9.5px; color: #6b7a8c; }
+  .item em { margin-left: auto; font-style: normal; font-size: 10px; font-weight: 800; color: #0e8a5b; }
+
+  .ticket { position: absolute; left: 8px; top: 120px; width: 170px; height: 86px; transform: rotate(-6deg); border-radius: 14px; background: linear-gradient(135deg, #ffffff, #e9f8f0); color: #0b1d36; padding: 12px 14px; box-shadow: 0 16px 36px rgba(0,0,0,.35);
+    -webkit-mask: radial-gradient(circle 9px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat; }
+  .ticket small { font-size: 9.5px; color: #0e8a5b; font-weight: 800; }
+  .ticket b { display: block; font-size: 17px; margin-top: 3px; }
+  .ticket i { position: absolute; right: 16px; bottom: 10px; font-style: normal; font-size: 11px; font-weight: 800; color: #05261a; background: #16b77a; padding: 3px 8px; border-radius: 999px; }
+  .c2 { right: 6px; top: 320px; width: 180px; transform: rotate(4deg); display: flex; gap: 10px; align-items: center; }
+  .c2 b { display: block; font-size: 12px; } .c2 small { font-size: 10px; }
+</style></head>
+<body>
+  <div class="glow" style="left:80px;top:30px;width:440px;height:440px"></div>
+  <div class="phone"><div class="screen">
+    <div class="island"></div>
+    <div class="status"><span>9:41</span><i></i></div>
+    <div class="hdr"><small>Main balance</small><div class="bal"><b>₦ 10,000</b><span>+ Bonus</span></div></div>
+    <div class="bd">
+      <div class="bcard"><small>Sports welcome bonus</small><b>₦ 10,000</b><p>Wagering progress</p>
+        <div class="prog"><i></i></div>
+        <div class="pl"><span>₦ 32,000 wagered</span><span>of ₦ 50,000</span></div>
+      </div>
+      <div class="rules">
+        <p><span>Bet type</span><b>Accumulator, 3+</b></p>
+        <p><span>Min. odds</span><b>1.40</b></p>
+        <p><span>Time left</span><b>21 days</b></p>
+      </div>
+      <div class="list">
+        <div class="item"><span class="ic" style="background:#fff4e0;color:#c27a00">%</span><div><b>Accumulator of the Day</b><small>Boosted odds</small></div><em>View</em></div>
+        <div class="item"><span class="ic" style="background:#eaf6f0;color:#0e8a5b">★</span><div><b>Promo code store</b><small>1,250 points</small></div><em>Open</em></div>
+      </div>
+    </div>
+  </div></div>
+  <div class="ticket"><small>FREE BET</small><b>₦ 500</b><i>Use now</i></div>
+  <div class="card-float c2"><span class="ok">↺</span><div><b>Cashback</b><small class="muted">For regular players</small></div></div>
+</body></html>
