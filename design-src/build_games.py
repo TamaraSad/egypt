@@ -101,7 +101,6 @@ def foot(prefix, scenes=False, rg=None):
         <div class="legal__grid">
           <div class="legal__item">
             <h3><span class="age-badge">18+</span> Adults only</h3>
-            <p>{rg or "Casino games are for people aged 18 and over. Results are random — only play with money you can afford to lose, and use deposit limits and self-exclusion in your account if you need them."}</p>
           </div>
         </div>
         <p class="disclaimer"><b>Disclaimer:</b> This is an independent guide and is not operated by 1xBet{"" if rg else " or the game providers"}. We may earn a commission when you sign up through links on this page. Trademarks belong to their owners.{" Offers, features and terms can change — always check the official 1xBet site." if rg else " Game availability, limits and RTP can differ by casino — check the game’s info panel before you play."}</p>
