@@ -32,6 +32,7 @@
   .csms small { font-size: 10px; } .csms b { display: block; font-size: 12px; margin: 2px 0 7px; }
   .code { display: flex; gap: 5px; }
   .code span { width: 30px; height: 34px; border-radius: 8px; background: #eafaf2; border: 1.5px solid #16b77a; display: grid; place-items: center; font-weight: 800; font-size: 15px; color: #0b1d36; }
+  .blur-num { display: inline-block; filter: blur(4.5px); opacity: .9; user-select: none; margin-left: 1px; }
 </style></head>
 <body>
   <div class="glow" style="left:60px;top:10px;width:420px;height:420px"></div>
@@ -42,7 +43,7 @@
         <h3>Log in <span>✕</span></h3>
         <div class="tabs"><b class="on">Phone</b><b>Email</b><b>ID</b></div>
         <p class="label">Phone number</p>
-        <div class="field focus"><span class="flag"></span><span class="cc">+234</span><span>803 555 0147</span></div>
+        <div class="field focus"><span class="flag"></span><span class="cc">+234</span><span>803 555 <span class="blur-num">0147</span></span></div>
         <p class="label">Password</p>
         <div class="field"><span class="dots">••••••••••</span><span class="eye">👁</span></div>
         <div class="row"><label><i>✓</i>Remember me</label><a>Forgot password?</a></div>

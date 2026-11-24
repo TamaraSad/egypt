@@ -348,7 +348,6 @@ def game_page(slug):
             <img class="game-fallback" src="{prefix}assets/img/{g['img']}" alt="{esc(g['img_alt'])}" width="560" height="420" fetchpriority="high">
             <canvas class="game-canvas" data-scene="{slug}" width="560" height="420" role="img" aria-label="Animated preview of a {name} round"></canvas>
           </div>
-          <figcaption>Animated illustration — not the real game.</figcaption>
         </figure>
       </div>
     </section>
