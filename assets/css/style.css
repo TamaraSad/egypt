@@ -222,7 +222,7 @@ p { margin: 0 0 1em; }
 /* ===== Правовой блок ===== */
 .legal { background: var(--c-navy); color: #dfe7f2; }
 .legal h2 { color: #fff; }
-.legal__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.legal__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
 .legal__item { background: var(--c-navy-2); border-radius: var(--radius); padding: 20px; }
 .legal__item h3 { color: #fff; margin-top: 0; display: flex; align-items: center; gap: 10px; }
 .legal__item p { margin: 0; }
