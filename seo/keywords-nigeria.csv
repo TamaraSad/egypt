@@ -54,5 +54,19 @@ Betting,1xbet football betting,transactional,medium,/ #why
 Betting,1xbet live betting,transactional,medium,/ #why
 Betting,1xbet odds,informational,low,/ #why
 Casino,1xbet casino,transactional,medium,/ #why
-Casino,1xbet aviator,transactional,medium,/ #why
+Casino,1xbet aviator,transactional,high,/games/aviator/
 Support,1xbet customer care nigeria,navigational,low,/ FAQ
+Games,1xbet games,navigational,medium,/games/
+Games,1xbet casino games,navigational,medium,/games/
+Aviator,aviator 1xbet,transactional,high,/games/aviator/
+Aviator,how to play aviator on 1xbet,informational,medium,/games/aviator/
+Aviator,aviator game nigeria,transactional,medium,/games/aviator/
+Aviator,aviator rtp,informational,low,/games/aviator/
+Aviator,aviator predictor,informational,medium,/games/aviator/ (warning section)
+Chicken Road,chicken road 1xbet,transactional,medium,/games/chicken-road/
+Chicken Road,chicken road game,transactional,medium,/games/chicken-road/
+Chicken Road,how to play chicken road,informational,low,/games/chicken-road/
+Chicken Road,chicken road difficulty levels,informational,low,/games/chicken-road/
+Tower Rush,tower rush 1xbet,transactional,medium,/games/tower-rush/
+Tower Rush,tower rush game,transactional,medium,/games/tower-rush/
+Tower Rush,how to play tower rush,informational,low,/games/tower-rush/

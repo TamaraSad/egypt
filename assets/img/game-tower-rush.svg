@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a4d82"/><stop offset="1" stop-color="#0f2748"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000" flood-opacity=".4"/></filter>
+  </defs>
+  <rect x="20" y="20" width="520" height="380" rx="28" fill="url(#sky)" filter="url(#sh)"/>
+  <rect x="20" y="356" width="520" height="44" fill="#0b1d36"/>
+  <path d="M20 356 H540 V372 a28 28 0 0 1 0 0 V372 H20 Z" fill="#16b77a" opacity=".5"/>
+  <!-- кран -->
+  <g stroke="#f4a62a" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="430" y1="356" x2="430" y2="64"/>
+    <line x1="430" y1="70" x2="250" y2="70"/>
+    <line x1="430" y1="70" x2="480" y2="70"/>
+    <line x1="430" y1="40" x2="300" y2="70"/>
+    <line x1="430" y1="40" x2="430" y2="70"/>
+  </g>
+  <rect x="470" y="64" width="22" height="22" rx="3" fill="#5d6b7e"/>
+  <line x1="270" y1="70" x2="270" y2="126" stroke="#cfd8e3" stroke-width="2.5"/>
+  <!-- блок на крюке -->
+  <g transform="translate(270 126)">
+    <rect x="-46" y="0" width="92" height="40" rx="6" fill="#ffffff"/>
+    <rect x="-34" y="10" width="16" height="12" rx="2" fill="#5aa3ff"/><rect x="-8" y="10" width="16" height="12" rx="2" fill="#5aa3ff"/><rect x="18" y="10" width="16" height="12" rx="2" fill="#5aa3ff"/>
+  </g>
+  <!-- башня -->
+  <g>
+    <g transform="translate(270 316)"><rect x="-56" y="0" width="112" height="40" rx="6" fill="#e6ecf5"/><g fill="#3b6fb5"><rect x="-42" y="12" width="18" height="14" rx="2"/><rect x="-9" y="12" width="18" height="14" rx="2"/><rect x="24" y="12" width="18" height="14" rx="2"/></g></g>
+    <g transform="translate(272 276)"><rect x="-54" y="0" width="108" height="40" rx="6" fill="#ffffff"/><g fill="#3b6fb5"><rect x="-40" y="12" width="18" height="14" rx="2"/><rect x="-9" y="12" width="18" height="14" rx="2"/><rect x="22" y="12" width="18" height="14" rx="2"/></g></g>
+    <g transform="translate(268 236)"><rect x="-52" y="0" width="104" height="40" rx="6" fill="#e6ecf5"/><g fill="#3b6fb5"><rect x="-38" y="12" width="18" height="14" rx="2"/><rect x="-9" y="12" width="18" height="14" rx="2"/><rect x="20" y="12" width="18" height="14" rx="2"/></g></g>
+    <g transform="translate(271 196)"><rect x="-50" y="0" width="100" height="40" rx="6" fill="#ffffff"/><g fill="#16b77a"><rect x="-36" y="12" width="18" height="14" rx="2"/><rect x="-9" y="12" width="18" height="14" rx="2"/><rect x="18" y="12" width="18" height="14" rx="2"/></g></g>
+  </g>
+  <!-- множитель -->
+  <g transform="translate(110 150)">
+    <rect x="-70" y="-36" width="140" height="72" rx="16" fill="#0b1d36" stroke="#16b77a" stroke-width="3"/>
+    <text x="0" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="38" fill="#ffffff">x3.20</text>
+  </g>
+  <g transform="translate(110 236)">
+    <rect x="-70" y="-24" width="140" height="48" rx="12" fill="#16b77a"/>
+    <text x="0" y="6" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="16" fill="#05261a">CASH OUT</text>
+  </g>
+</svg>
