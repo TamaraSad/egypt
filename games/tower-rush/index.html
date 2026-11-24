@@ -175,7 +175,11 @@
           </div>
         </div>
         <figure class="hero__art">
-          <img src="../../assets/img/game-tower-rush.svg" alt="Crane stacking floors on a tower with an x3.20 multiplier and a cash-out button" width="560" height="420" fetchpriority="high">
+          <div class="game-screen">
+            <img class="game-fallback" src="../../assets/img/game-tower-rush.svg" alt="Crane stacking floors on a tower with an x3.20 multiplier and a cash-out button" width="560" height="420" fetchpriority="high">
+            <canvas class="game-canvas" data-scene="tower-rush" width="560" height="420" role="img" aria-label="Animated preview of a Tower Rush round"></canvas>
+          </div>
+          <figcaption>Animated illustration — not the real game.</figcaption>
         </figure>
       </div>
     </section>
@@ -367,5 +371,6 @@
   <a class="to-top" href="#top" aria-label="Back to top">↑</a>
 
   <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/game-scenes.js" defer></script>
 </body>
 </html>

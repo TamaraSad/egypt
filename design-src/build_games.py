@@ -96,7 +96,8 @@ def head(prefix, title, desc, canonical, ld):
 """
 
 
-def foot(prefix):
+def foot(prefix, scenes=False):
+    scene_js = f'\n  <script src="{prefix}assets/js/game-scenes.js" defer></script>' if scenes else ""
     return f"""
     <section class="section legal" id="legal" aria-labelledby="legal-title">
       <div class="container">
@@ -141,7 +142,7 @@ def foot(prefix):
 
   <a class="to-top" href="#top" aria-label="Back to top">↑</a>
 
-  <script src="{prefix}assets/js/main.js" defer></script>
+  <script src="{prefix}assets/js/main.js" defer></script>{scene_js}
 </body>
 </html>
 """
@@ -343,7 +344,11 @@ def game_page(slug):
           </div>
         </div>
         <figure class="hero__art">
-          <img src="{prefix}assets/img/{g['img']}" alt="{esc(g['img_alt'])}" width="560" height="420" fetchpriority="high">
+          <div class="game-screen">
+            <img class="game-fallback" src="{prefix}assets/img/{g['img']}" alt="{esc(g['img_alt'])}" width="560" height="420" fetchpriority="high">
+            <canvas class="game-canvas" data-scene="{slug}" width="560" height="420" role="img" aria-label="Animated preview of a {name} round"></canvas>
+          </div>
+          <figcaption>Animated illustration — not the real game.</figcaption>
         </figure>
       </div>
     </section>
@@ -441,7 +446,7 @@ def game_page(slug):
       </div>
     </section>
 """
-    return head(prefix, g["title"], g["desc"], url, ld) + body + foot(prefix)
+    return head(prefix, g["title"], g["desc"], url, ld) + body + foot(prefix, scenes=True)
 
 
 def hub_page():
