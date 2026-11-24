@@ -13,6 +13,18 @@
     <lastmod>2026-11-24</lastmod>
   </url>
   <url>
+    <loc>https://example.com/app/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/app/android/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/app/ios/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
     <loc>https://example.com/games/</loc>
     <lastmod>2026-11-24</lastmod>
   </url>

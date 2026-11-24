@@ -34,14 +34,14 @@ Bonus,1xbet welcome bonus nigeria,transactional,medium,/promo-code/
 Bonus,1xbet first deposit bonus,transactional,medium,/promo-code/
 Bonus,1xbet free bet,transactional,medium,/promo-code/
 Bonus,1xbet bonus terms,informational,low,/promo-code/
-App,1xbet app,transactional,high,/ #app → /app/
-App,1xbet app download,transactional,high,/ #app
-App,1xbet apk,transactional,high,/ #app
-App,1xbet apk download,transactional,medium,/ #app
-App,1xbet app nigeria,transactional,medium,/ #app
-App,1xbet app for android,transactional,medium,/ #app
-App,1xbet ios app,transactional,low,/ #app
-App,1xbet mobile,navigational,medium,/ #app
+App,1xbet app,transactional,high,/app/
+App,1xbet app download,transactional,high,/app/
+App,1xbet apk,transactional,high,/app/android/
+App,1xbet apk download,transactional,medium,/app/android/
+App,1xbet app nigeria,transactional,medium,/app/
+App,1xbet app for android,transactional,medium,/app/android/
+App,1xbet ios app,transactional,low,/app/ios/
+App,1xbet mobile,navigational,medium,/app/
 Payments,1xbet deposit,transactional,medium,/ #payments → /payments/
 Payments,1xbet minimum deposit,informational,medium,/ #payments
 Payments,1xbet withdrawal,transactional,medium,/ #payments
@@ -70,3 +70,8 @@ Chicken Road,chicken road difficulty levels,informational,low,/games/chicken-roa
 Tower Rush,tower rush 1xbet,transactional,medium,/games/tower-rush/
 Tower Rush,tower rush game,transactional,medium,/games/tower-rush/
 Tower Rush,how to play tower rush,informational,low,/games/tower-rush/
+App,1xbet app iphone,transactional,medium,/app/ios/
+App,1xbet ios download,transactional,low,/app/ios/
+App,how to install 1xbet apk,informational,medium,/app/android/
+App,1xbet app update,informational,low,/app/android/
+App,1xbet app not installing,informational,low,/app/android/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="mock-base.css">
+<style>
+  body { width: 600px; height: 520px; }
+  .phone { left: 180px; top: 14px; width: 240px; height: 494px; transform: rotate(3deg); }
+  .phone .screen { background: #fff; }
+  .sbar { height: 38px; display: flex; align-items: center; justify-content: space-between; padding: 6px 22px 0; font-size: 11px; font-weight: 700; color: #0b1d36; }
+  .bk { padding: 4px 16px 0; font-size: 12px; color: #1a7ae0; font-weight: 600; }
+  .hd { display: flex; gap: 12px; padding: 12px 16px; }
+  .icon { width: 68px; height: 68px; border-radius: 16px; background: linear-gradient(145deg, #1a8fe0, #0b4f9c); display: grid; place-items: center; flex-shrink: 0; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+  .icon i { width: 32px; height: 32px; border-radius: 50%; border: 3.5px solid #fff; position: relative; }
+  .icon i::after { content: ""; position: absolute; inset: 7px; background: #fff; clip-path: polygon(50% 0, 100% 38%, 82% 100%, 18% 100%, 0 38%); }
+  .hd b { display: block; font-size: 14.5px; line-height: 1.2; } .hd small { display: block; font-size: 10.5px; color: #8a97a8; margin-top: 2px; }
+  .get { display: inline-block; margin-top: 8px; background: #1a7ae0; color: #fff; font-weight: 800; font-size: 12px; padding: 5px 18px; border-radius: 999px; }
+  .meta { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #e8edf3; border-bottom: 1px solid #e8edf3; margin: 0 16px; padding: 8px 0; text-align: center; }
+  .meta div { font-size: 9px; color: #8a97a8; font-weight: 700; }
+  .meta b { display: block; font-size: 13px; color: #3b4a5c; margin-top: 2px; }
+  .shots { display: flex; gap: 8px; padding: 12px 16px; }
+  .shot { width: 96px; height: 190px; border-radius: 14px; background: #0b1d36; padding: 10px 8px; flex-shrink: 0; }
+  .shot .l { height: 7px; border-radius: 4px; background: rgba(255,255,255,.5); margin-bottom: 6px; }
+  .shot .c { height: 40px; border-radius: 8px; background: rgba(255,255,255,.08); margin-bottom: 6px; }
+  .shot .g { height: 22px; border-radius: 6px; background: #16b77a; margin-top: 10px; }
+  .comp { margin: 0 16px; font-size: 10.5px; color: #3b4a5c; }
+  .comp b { font-size: 11px; color: #0b1d36; }
+
+  .c1 { left: 8px; top: 120px; width: 190px; transform: rotate(-4deg); display: flex; gap: 10px; align-items: center; }
+  .c1 b { display: block; font-size: 12px; } .c1 small { font-size: 10px; }
+  .c2 { right: 4px; top: 330px; width: 186px; transform: rotate(3deg); display: flex; gap: 10px; align-items: center; }
+  .c2 .fid { width: 34px; height: 34px; border-radius: 10px; border: 2.5px solid #16b77a; display: grid; place-items: center; color: #16b77a; font-weight: 800; font-size: 15px; flex-shrink: 0; }
+  .c2 b { display: block; font-size: 12px; } .c2 small { font-size: 10px; }
+</style></head>
+<body>
+  <div class="glow" style="left:80px;top:30px;width:440px;height:440px"></div>
+  <div class="phone"><div class="screen">
+    <div class="island"></div>
+    <div class="sbar"><span>9:41</span><i style="display:inline-block;width:20px;height:9px;border:1.5px solid #0b1d36;border-radius:3px"></i></div>
+    <div class="bk">‹ Search</div>
+    <div class="hd"><span class="icon"><i></i></span><div><b>1xBet NG ― Betting &amp; Casino</b><small>Sports</small><span class="get">GET</span></div></div>
+    <div class="meta"><div>CATEGORY<b>Sports</b></div><div>AGE<b>18+</b></div><div>LANGUAGE<b>EN</b></div></div>
+    <div class="shots">
+      <div class="shot"><div class="l" style="width:70%"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="g"></div></div>
+      <div class="shot" style="background:#14325c"><div class="l" style="width:50%"></div><div class="c" style="height:70px"></div><div class="c"></div><div class="g" style="background:#f4a62a"></div></div>
+    </div>
+    <div class="comp"><b>Compatibility</b><br>Requires iOS 15.0 or later</div>
+  </div></div>
+
+  <div class="card-float c1"><span class="ok">✓</span><div><b>App Store</b><small class="muted">Nigeria region</small></div></div>
+  <div class="card-float c2"><span class="fid">iOS</span><div><b>iPhone &amp; iPad</b><small class="muted">iOS 15.0 or later</small></div></div>
+</body></html>

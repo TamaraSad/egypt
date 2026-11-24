@@ -7,6 +7,7 @@ MOCKS = {  # исходник -> имя картинки
     'mock-hero.html': 'home-hero', 'mock-promo.html': 'home-promo',
     'mock-app.html': 'home-app', 'mock-login.html': 'home-login',
     'signup-mockup.html': 'signup-mockup',
+    'mock-android.html': 'app-android', 'mock-ios.html': 'app-ios',
 }
 want = sys.argv[1:] or list(MOCKS)
 with sync_playwright() as p:

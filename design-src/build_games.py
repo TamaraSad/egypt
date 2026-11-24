@@ -16,7 +16,8 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
-def head(prefix, title, desc, canonical, ld):
+def head(prefix, title, desc, canonical, ld, current="games"):
+    cur = lambda k: ' aria-current="page"' if k == current else ""
     return f"""<!DOCTYPE html>
 <html lang="en-NG" dir="ltr">
 <head>
@@ -75,10 +76,10 @@ def head(prefix, title, desc, canonical, ld):
         <ul>
           <li><a href="{prefix}">Home</a></li>
           <li><a href="{prefix}registration/">Sign Up</a></li>
-          <li><a href="{prefix}promo-code/">Promo Code</a></li>
-          <li><a href="{prefix}#app">App</a></li>
+          <li><a href="{prefix}promo-code/"{cur("promo")}>Promo Code</a></li>
+          <li><a href="{prefix}app/"{cur("app")}>App</a></li>
           <li><a href="{prefix}#login">Login</a></li>
-          <li><a href="{prefix}games/" aria-current="page">Games</a></li>
+          <li><a href="{prefix}games/"{cur("games")}>Games</a></li>
         </ul>
       </nav>
 
@@ -122,6 +123,7 @@ def foot(prefix, scenes=False):
       <nav aria-label="Site links">
         <ul>
           <li><a href="{prefix}">Home</a></li>
+          <li><a href="{prefix}app/">App</a></li>
           <li><a href="{prefix}games/">Games</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
