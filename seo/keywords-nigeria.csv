@@ -1,0 +1,58 @@
+cluster,keyword,intent,priority,target
+General,1xbet,navigational,high,/ (home)
+General,1xbet nigeria,navigational,high,/ (home)
+General,1xbet ng,navigational,high,/ (home)
+General,1xbet.ng,navigational,high,/ (home)
+General,1xbet nigeria official site,navigational,high,/ (home)
+General,1xbet official website,navigational,medium,/ (home)
+General,1xbet online,navigational,medium,/ (home)
+General,1xbet nigeria review,informational,medium,/review/ (inner page)
+General,is 1xbet legal in nigeria,informational,medium,/ FAQ
+General,is 1xbet licensed in nigeria,informational,low,/ FAQ (close variant) → /review/
+Registration,1xbet registration,transactional,high,/ #register → /registration/
+Registration,1xbet registration nigeria,transactional,high,/ #register → /registration/
+Registration,1xbet sign up,transactional,high,/ #register
+Registration,1xbet sign up nigeria,transactional,medium,/registration/ (inner page)
+Registration,how to register on 1xbet,informational,medium,/ #register
+Registration,1xbet create account,transactional,medium,/registration/ (inner page)
+Registration,1xbet registration with phone number,transactional,low,/ #register
+Registration,1xbet one click registration,transactional,low,/ #register
+Login,1xbet login,navigational,high,/ #login → /login/
+Login,1xbet login nigeria,navigational,high,/ #login
+Login,1xbet ng login,navigational,medium,/ #login
+Login,1xbet sign in,navigational,medium,/ #login
+Login,1xbet login with phone number,navigational,low,/ #login
+Login,1xbet forgot password,informational,low,/login/ (inner page)
+Promo code,1xbet promo code,transactional,high,/ #promo → /promo-code/
+Promo code,1xbet promo code nigeria,transactional,high,/ #promo
+Promo code,1xbet promo code today,transactional,medium,/ #promo
+Promo code,1xbet promo code for registration,transactional,medium,/ #promo
+Promo code,1xbet bonus code,transactional,medium,/ #promo
+Promo code,how to use 1xbet promo code,informational,medium,/promo-code/ (inner page)
+Bonus,1xbet welcome bonus,transactional,high,/ #promo
+Bonus,1xbet welcome bonus nigeria,transactional,medium,/ #promo
+Bonus,1xbet first deposit bonus,transactional,medium,/ #promo
+Bonus,1xbet free bet,transactional,medium,/ #promo
+Bonus,1xbet bonus terms,informational,low,/ #promo
+App,1xbet app,transactional,high,/ #app → /app/
+App,1xbet app download,transactional,high,/ #app
+App,1xbet apk,transactional,high,/ #app
+App,1xbet apk download,transactional,medium,/ #app
+App,1xbet app nigeria,transactional,medium,/ #app
+App,1xbet app for android,transactional,medium,/ #app
+App,1xbet ios app,transactional,low,/ #app
+App,1xbet mobile,navigational,medium,/ #app
+Payments,1xbet deposit,transactional,medium,/ #payments → /payments/
+Payments,1xbet minimum deposit,informational,medium,/ #payments
+Payments,1xbet withdrawal,transactional,medium,/ #payments
+Payments,how to withdraw from 1xbet,informational,medium,/ #payments
+Payments,1xbet withdrawal time,informational,low,/ #payments
+Betting,1xbet booking code,transactional,high,/ #booking → /booking-code/
+Betting,how to load booking code on 1xbet,informational,medium,/ #booking
+Betting,1xbet sports betting,transactional,medium,/ #why
+Betting,1xbet football betting,transactional,medium,/ #why
+Betting,1xbet live betting,transactional,medium,/ #why
+Betting,1xbet odds,informational,low,/ #why
+Casino,1xbet casino,transactional,medium,/ #why
+Casino,1xbet aviator,transactional,medium,/ #why
+Support,1xbet customer care nigeria,navigational,low,/ FAQ

@@ -9,7 +9,7 @@
   /* Мобильное меню */
   function setMenu(open) {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     nav.classList.toggle('is-open', open);
   }
 
@@ -59,6 +59,31 @@
     if (logo.complete && logo.naturalWidth === 0) markMissing();
     else logo.addEventListener('error', markMissing);
   }
+
+  /* Промокод: меняется здесь, подставляется во все [data-promo] */
+  var PROMO_CODE = 'EGYPTONEX20';
+  document.querySelectorAll('[data-promo]').forEach(function (el) { el.textContent = PROMO_CODE; });
+
+  /* Кнопка «Copy» */
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var done = function () {
+        btn.textContent = 'Copied!';
+        btn.classList.add('is-copied');
+        setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('is-copied'); }, 1800);
+      };
+      var fallback = function () {
+        var t = document.createElement('textarea');
+        t.value = PROMO_CODE; t.setAttribute('readonly', ''); t.style.position = 'absolute'; t.style.left = '-9999px';
+        document.body.appendChild(t); t.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(t);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(PROMO_CODE).then(done, fallback);
+      } else { fallback(); }
+    });
+  });
 
   /* Текущий год в подвале */
   var year = document.getElementById('year');

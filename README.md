@@ -1,28 +1,28 @@
-# 1xBet Egypt — информационный сайт (главная страница)
+# 1xBet Nigeria — landing page
 
-Статический сайт на HTML/CSS/JS, арабский язык, RTL.
+Static landing page (HTML/CSS/JS), English, for Nigerian users.
 
-## Структура
+## Structure
 ```
-index.html              главная страница
-assets/css/style.css    стили
-assets/js/main.js       скрипты (меню, FAQ, кнопка «наверх»)
-favicon.svg
-robots.txt
-sitemap.xml
+index.html                    landing page
+assets/css/style.css          styles
+assets/js/main.js             menu, FAQ, promo code + copy button
+assets/img/*.svg              illustrations
+seo/keywords-nigeria.csv      semantic core: cluster, keyword, intent, priority, target page
+favicon.svg, robots.txt, sitemap.xml
 ```
 
-## Перед публикацией
-1. Заменить `https://example.com` на реальный домен (index.html, robots.txt, sitemap.xml).
-2. Заполнить данные владельца сайта и контакты (правовой блок в index.html).
-3. Добавить проверенный номер горячей линии помощи при зависимости (комментарий в правовом блоке).
-4. Положить OG-изображение `assets/img/og-cover.jpg` (1200×630).
-5. Получить юридическое заключение о допустимости публикации в Египте.
+## Где что менять
+- **Промокод** — одна строка в `assets/js/main.js` (`PROMO_CODE`). В HTML он тоже прописан как запасной вариант для браузеров без JS.
+- **Партнёрская ссылка** — во всех кнопках с `rel="sponsored"` в `index.html` (поиск по `reffpa.com`).
+- **Логотип 1xBet** — положите официальный файл в `assets/img/1xbet-logo.svg`; пока его нет, выводится текст «1xBet».
+- **Домен** — заменить `https://example.com` в `index.html`, `robots.txt`, `sitemap.xml`.
+- **OG-картинка** — `assets/img/og-cover.jpg` (1200×630).
+
+## Перед запуском
+- Проверить, что промокод работает для нигерийских аккаунтов, и сверить условия бонуса на 1xbet.ng.
+- Проверить, что партнёрская ссылка ведёт нигерийских пользователей на лицензированный 1xbet.ng.
+- Рекламу ставок в Нигерии регулирует ARCON (Advertising Regulatory Council of Nigeria) — уточнить требования к партнёрским материалам.
 
 ## Размещение
-Подходит любой статический хостинг (GitHub Pages, Netlify, Cloudflare Pages, обычный веб-сервер).
-Корень сайта — папка с `index.html`. Включить HTTPS, при сборке минифицировать CSS и JS.
-
-## Логотип 1xBet
-В подвале есть место под логотип: положите официальный файл в `assets/img/1xbet-logo.svg`
-(использовать только с разрешения правообладателя). Пока файла нет, вместо логотипа выводится текст «1xBet».
+Любой статический хостинг (GitHub Pages, Netlify, Cloudflare Pages). HTTPS, минификация CSS/JS при сборке.

@@ -16,7 +16,7 @@
   --radius: 14px;
   --shadow: 0 4px 18px rgba(11, 29, 54, .08);
   --container: 1160px;
-  --font: "Cairo", "Segoe UI", Tahoma, system-ui, sans-serif;
+  --font: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
 /* ===== База ===== */
@@ -26,7 +26,7 @@ body {
   margin: 0;
   font-family: var(--font);
   font-size: 1.0625rem;
-  line-height: 1.85;
+  line-height: 1.7;
   color: var(--c-text);
   background: var(--c-bg);
   overflow-x: hidden;
@@ -103,7 +103,7 @@ p { margin: 0 0 1em; }
   position: relative; flex-shrink: 0;
   width: 66px; height: 44px; border-radius: 6px; overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,.35), 0 0 0 2px rgba(255,255,255,.15);
-  transform-origin: right center;
+  transform-origin: left center;
   animation: flag-wave 4s ease-in-out infinite;
 }
 .flag-wave::after {
@@ -322,4 +322,52 @@ p { margin: 0 0 1em; }
 @media (max-width: 600px) {
   .hero__art img { max-width: 320px; }
   .section__img { max-width: 280px; }
+}
+
+/* ===== Nigeria: CTA, промокод, доверие ===== */
+.btn--sm { min-height: 40px; padding: 8px 16px; font-size: .95rem; }
+.btn--lg { min-height: 56px; padding: 14px 32px; font-size: 1.1rem; box-shadow: 0 8px 24px rgba(22,183,122,.35); }
+.header-cta { flex-shrink: 0; }
+.site-nav { margin-inline-end: auto; }
+
+.promo-card {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0;
+  margin: 22px 0 20px; border-radius: var(--radius); overflow: hidden;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14);
+}
+.promo-card > div { padding: 18px 20px; }
+.promo-card__code { background: rgba(22,183,122,.12); border-inline-start: 1px dashed rgba(255,255,255,.25); }
+.promo-card__label { margin: 0 0 4px; font-size: .85rem; color: #a9b8cc; font-weight: 600; }
+.promo-card__value { margin: 0; font-size: 1.35rem; font-weight: 800; color: #fff; line-height: 1.3; }
+.promo-card__note { margin: 6px 0 0; font-size: .85rem; color: #a9b8cc; }
+
+.code-box { display: flex; align-items: stretch; border-radius: 10px; overflow: hidden; border: 2px dashed var(--c-accent); background: #071427; }
+.code-box__value { flex: 1; display: flex; align-items: center; padding: 8px 12px; font-weight: 800; font-size: 1.15rem; letter-spacing: .06em; color: #fff; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; min-width: 0; overflow-wrap: anywhere; }
+.code-box__copy { border: 0; background: var(--c-accent); color: #05261a; font: inherit; font-weight: 800; padding: 0 16px; cursor: pointer; min-height: 44px; }
+.code-box__copy:hover { background: #1fcf8b; }
+.code-box__copy.is-copied { background: #fff; }
+
+.inline-code { display: inline-block; padding: 0 8px; border-radius: 6px; background: #eaf6f0; color: var(--c-accent-dark); font-weight: 800; letter-spacing: .04em; font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: .95em; }
+
+.trust-strip { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.trust-strip li { padding: 14px 16px; border-radius: 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); }
+.trust-strip b { display: block; color: #fff; }
+.trust-strip span { font-size: .9rem; color: #a9b8cc; }
+
+.side-box { background: #fff; border: 1px solid var(--c-border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+.side-box h3 { margin-top: 0; }
+.section--alt .side-box { background: #fff; }
+.steps--inline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.steps--inline li { background: var(--c-bg-alt); border-radius: 12px; padding: 14px 14px 14px 56px; margin: 0; }
+.steps--inline li::before { inset-inline-start: 14px; top: 14px; }
+.section .btn--primary:not(.btn--lg) { margin-top: 8px; }
+
+@media (max-width: 1000px) {
+  .trust-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps--inline { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  .promo-card { grid-template-columns: minmax(0, 1fr); }
+  .promo-card__code { border-inline-start: 0; border-top: 1px dashed rgba(255,255,255,.25); }
+  .hero__actions .btn--lg { width: 100%; }
 }
