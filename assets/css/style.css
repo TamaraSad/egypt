@@ -419,3 +419,9 @@ p { margin: 0 0 1em; }
   .site-header__inner > .nav-toggle { margin-inline-start: 4px; margin-inline-end: -10px; }
   .site-logo img { height: 24px; }
 }
+
+/* Картинка-макет на странице регистрации */
+.hero__art picture img { width: 100%; height: auto; max-width: 520px; margin-inline: auto; display: block; }
+.hero__art figcaption { margin-top: 4px; text-align: center; font-size: .78rem; color: #8a9bb3; }
+@media (max-width: 1000px) { .hero__art picture img { max-width: 420px; } }
+@media (max-width: 600px) { .hero__art picture img { max-width: 340px; } }
