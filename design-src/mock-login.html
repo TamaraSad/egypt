@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="mock-base.css">
+<style>
+  body { width: 600px; height: 460px; }
+  .win { left: 20px; top: 30px; width: 470px; height: 380px; background: #0f1b2d; transform: rotate(-2deg); }
+  .page { position: relative; height: calc(100% - 34px); display: grid; place-items: center; background: radial-gradient(120% 90% at 20% 0%, #173a68 0%, #0b1d36 60%); }
+  .login { width: 270px; background: #fff; border-radius: 18px; padding: 18px; box-shadow: 0 16px 40px rgba(0,0,0,.35); }
+  .login h3 { font-size: 17px; font-weight: 800; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+  .login h3 span { font-size: 12px; color: #8a97a8; }
+  .tabs { display: grid; grid-template-columns: repeat(3, 1fr); background: #e7ecf2; border-radius: 10px; padding: 3px; margin-bottom: 12px; }
+  .tabs b { text-align: center; font-size: 10.5px; padding: 6px 0; border-radius: 8px; color: #5d6b7e; }
+  .tabs b.on { background: #fff; color: #0b1d36; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+  .label { font-size: 10px; font-weight: 600; color: #6b7a8c; margin: 0 0 5px 2px; }
+  .field { height: 38px; border-radius: 10px; border: 1.5px solid #dde4ee; display: flex; align-items: center; gap: 8px; padding: 0 10px; font-size: 13px; font-weight: 600; margin-bottom: 10px; }
+  .field.focus { border-color: #16b77a; box-shadow: 0 0 0 3px rgba(22,183,122,.15); }
+  .flag { width: 18px; height: 12px; border-radius: 2px; background: linear-gradient(90deg, #008751 33.3%, #fff 33.3% 66.6%, #008751 66.6%); box-shadow: 0 0 0 1px #dde4ee; }
+  .cc { color: #5d6b7e; padding-right: 8px; border-right: 1px solid #dde4ee; }
+  .dots { letter-spacing: 3px; font-size: 15px; }
+  .eye { margin-left: auto; color: #8a97a8; font-size: 12px; }
+  .row { display: flex; justify-content: space-between; align-items: center; font-size: 10.5px; margin: 2px 0 12px; }
+  .row label { display: flex; gap: 6px; align-items: center; color: #3b4a5c; font-weight: 600; }
+  .row label i { width: 14px; height: 14px; border-radius: 4px; background: #16b77a; display: inline-grid; place-items: center; color: #fff; font-size: 9px; font-style: normal; }
+  .row a { color: #0e8a5b; font-weight: 700; text-decoration: none; }
+  .btn { height: 40px; border-radius: 11px; background: #16b77a; color: #05261a; font-weight: 800; font-size: 13.5px; display: grid; place-items: center; }
+
+  .c2fa { right: 4px; top: 56px; width: 196px; transform: rotate(4deg); }
+  .c2fa .r { display: flex; justify-content: space-between; align-items: center; }
+  .c2fa b { font-size: 12px; } .c2fa small { display: block; font-size: 10px; margin-top: 2px; }
+  .tgl { width: 34px; height: 20px; border-radius: 10px; background: #16b77a; position: relative; flex-shrink: 0; }
+  .tgl::after { content: ""; position: absolute; right: 2px; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+  .csms { right: 4px; top: 300px; width: 162px; transform: rotate(-3deg); }
+  .csms small { font-size: 10px; } .csms b { display: block; font-size: 12px; margin: 2px 0 7px; }
+  .code { display: flex; gap: 5px; }
+  .code span { width: 30px; height: 34px; border-radius: 8px; background: #eafaf2; border: 1.5px solid #16b77a; display: grid; place-items: center; font-weight: 800; font-size: 15px; color: #0b1d36; }
+</style></head>
+<body>
+  <div class="glow" style="left:60px;top:10px;width:420px;height:420px"></div>
+  <div class="win">
+    <div class="win-bar"><span class="d" style="background:#ff5f57"></span><span class="d" style="background:#febc2e"></span><span class="d" style="background:#28c840"></span><span class="addr"><span class="lock"></span>https://</span></div>
+    <div class="page">
+      <div class="login">
+        <h3>Log in <span>✕</span></h3>
+        <div class="tabs"><b class="on">Phone</b><b>Email</b><b>ID</b></div>
+        <p class="label">Phone number</p>
+        <div class="field focus"><span class="flag"></span><span class="cc">+234</span><span>803 555 0147</span></div>
+        <p class="label">Password</p>
+        <div class="field"><span class="dots">••••••••••</span><span class="eye">👁</span></div>
+        <div class="row"><label><i>✓</i>Remember me</label><a>Forgot password?</a></div>
+        <div class="btn">Log in</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-float c2fa"><div class="r"><div><b>Two-step verification</b><small class="muted">Extra code at every login</small></div><span class="tgl"></span></div></div>
+  <div class="card-float csms"><small class="muted">SMS code</small><b>Enter to continue</b><div class="code"><span>4</span><span>8</span><span>2</span><span>1</span></div></div>
+</body></html>

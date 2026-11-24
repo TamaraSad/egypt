@@ -1,0 +1,29 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: transparent; }
+body { position: relative; font-family: "Inter", sans-serif; color: #13202f; -webkit-font-smoothing: antialiased; overflow: hidden; }
+.glow { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(22,183,122,.32), rgba(22,183,122,0) 70%); }
+
+/* телефон */
+.phone { position: absolute; border-radius: 40px; background: linear-gradient(145deg, #2a3f63, #0d1a2e); padding: 9px; box-shadow: 0 28px 56px rgba(0,0,0,.45), inset 0 0 0 2px rgba(255,255,255,.08); }
+.screen { width: 100%; height: 100%; border-radius: 32px; overflow: hidden; position: relative; background: #f4f6f9; }
+.island { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 74px; height: 21px; border-radius: 12px; background: #05080f; z-index: 5; }
+.status { height: 38px; display: flex; align-items: center; justify-content: space-between; padding: 6px 20px 0; font-size: 11px; font-weight: 700; color: #fff; background: #0b1d36; }
+.status i { display: inline-block; width: 20px; height: 9px; border: 1.5px solid #fff; border-radius: 3px; position: relative; }
+.status i::after { content: ""; position: absolute; inset: 1.5px 5px 1.5px 1.5px; background: #fff; border-radius: 1px; }
+
+/* окно браузера */
+.win { position: absolute; border-radius: 16px; overflow: hidden; background: #0f1b2d; box-shadow: 0 28px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.06); }
+.win-bar { height: 34px; background: #e9eef4; display: flex; align-items: center; gap: 6px; padding: 0 12px; }
+.win-bar .d { width: 10px; height: 10px; border-radius: 50%; }
+.addr { margin-left: 10px; flex: 1; height: 22px; border-radius: 11px; background: #fff; display: flex; align-items: center; gap: 6px; padding: 0 10px; font-size: 10.5px; color: #3b4a5c; font-weight: 600; }
+.lock { width: 9px; height: 8px; border-radius: 2px; background: #16b77a; position: relative; margin-top: 3px; }
+.lock::before { content: ""; position: absolute; left: 1.5px; top: -5px; width: 6px; height: 6px; border: 1.6px solid #16b77a; border-bottom: 0; border-radius: 4px 4px 0 0; box-sizing: border-box; }
+
+.card-float { position: absolute; background: #fff; border-radius: 14px; padding: 11px 13px; box-shadow: 0 16px 36px rgba(0,0,0,.28); }
+.card-dark { background: #0b1d36; color: #fff; }
+.ok { width: 20px; height: 20px; border-radius: 50%; background: #16b77a; color: #fff; display: inline-grid; place-items: center; font-size: 11px; font-weight: 800; flex-shrink: 0; }
+.muted { color: #6b7a8c; }
+.live { display: inline-flex; align-items: center; gap: 4px; padding: 2px 7px; border-radius: 6px; background: #d6453d; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .04em; }
+.live::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #fff; }
+.odd { display: grid; place-items: center; border-radius: 8px; font-weight: 800; }
+.mono { font-family: "DejaVu Sans Mono", monospace; letter-spacing: .06em; }

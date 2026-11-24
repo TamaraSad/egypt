@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="mock-base.css">
+<style>
+  body { width: 580px; height: 520px; }
+  .p1 { left: 60px; top: 40px; width: 220px; height: 450px; transform: rotate(-6deg); }
+  .p2 { left: 290px; top: 20px; width: 220px; height: 450px; transform: rotate(5deg); }
+  .hdr { background: #0b1d36; color: #fff; padding: 4px 14px 12px; }
+  .search { height: 30px; border-radius: 10px; background: rgba(255,255,255,.1); display: flex; align-items: center; padding: 0 10px; font-size: 10.5px; color: #9fb0c6; margin-top: 6px; }
+  .chips { display: flex; gap: 6px; padding: 10px 12px 4px; }
+  .chips span { padding: 5px 10px; border-radius: 999px; background: #fff; border: 1px solid #e2e8f0; font-size: 10px; font-weight: 700; color: #3b4a5c; white-space: nowrap; }
+  .chips span.on { background: #16b77a; border-color: #16b77a; color: #05261a; }
+  .sec { padding: 8px 12px 0; font-size: 11px; font-weight: 800; display: flex; justify-content: space-between; }
+  .sec span { color: #16b77a; font-size: 10px; }
+  .mcard { margin: 8px 12px 0; background: #fff; border-radius: 14px; padding: 10px; border: 1px solid #e2e8f0; }
+  .mcard .top { display: flex; justify-content: space-between; align-items: center; font-size: 9.5px; color: #6b7a8c; font-weight: 700; margin-bottom: 6px; }
+  .tm { display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 700; margin: 3px 0; }
+  .tm b { color: #0b1d36; }
+  .odds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin-top: 8px; }
+  .odds div { background: #f1f5f9; border-radius: 8px; padding: 5px 0; text-align: center; font-size: 8.5px; color: #6b7a8c; font-weight: 700; }
+  .odds div b { display: block; color: #0b1d36; font-size: 12px; }
+  .nav { position: absolute; left: 0; right: 0; bottom: 0; height: 46px; background: #fff; border-top: 1px solid #e2e8f0; display: grid; grid-template-columns: repeat(4, 1fr); place-items: center; font-size: 8.5px; font-weight: 700; color: #8a97a8; }
+  .nav span:first-child { color: #16b77a; }
+  .game { margin: 8px 12px 0; border-radius: 14px; height: 92px; background: linear-gradient(160deg, #14325c, #071224); position: relative; overflow: hidden; color: #fff; padding: 10px; }
+  .game b { font-size: 12px; } .game small { display: block; font-size: 9px; color: #9fb0c6; }
+  .game svg { position: absolute; left: 0; bottom: 0; width: 100%; height: 70%; }
+  .game em { position: absolute; right: 10px; top: 26px; font-style: normal; font-weight: 800; font-size: 22px; }
+
+  .notif { position: absolute; left: 150px; top: 6px; width: 270px; background: rgba(255,255,255,.97); border-radius: 16px; padding: 10px 12px; display: flex; gap: 10px; align-items: center; box-shadow: 0 16px 36px rgba(0,0,0,.3); z-index: 5; }
+  .notif .ic { width: 30px; height: 30px; border-radius: 9px; background: #0b1d36; display: grid; place-items: center; font-size: 15px; flex-shrink: 0; }
+  .notif b { display: block; font-size: 11.5px; } .notif small { font-size: 10px; color: #6b7a8c; }
+  .dl { left: 6px; top: 392px; width: 236px; transform: rotate(-3deg); display: flex; gap: 10px; align-items: center; z-index: 5; }
+  .shield { width: 34px; height: 38px; flex-shrink: 0; }
+  .dl b { display: block; font-size: 12px; } .dl small { font-size: 10px; }
+</style></head>
+<body>
+  <div class="glow" style="left:70px;top:40px;width:440px;height:440px"></div>
+
+  <div class="phone p1"><div class="screen">
+    <div class="island"></div>
+    <div class="status"><span>9:41</span><i></i></div>
+    <div class="hdr"><div class="search">Search events, teams, games</div></div>
+    <div class="chips"><span class="on">Football</span><span>Basketball</span><span>Tennis</span></div>
+    <div class="sec">Live now <span>All 214</span></div>
+    <div class="mcard">
+      <div class="top"><span>NPFL</span><span class="live">54'</span></div>
+      <div class="tm"><span>Remo Stars</span><b>1</b></div>
+      <div class="tm"><span>Rivers United</span><b>1</b></div>
+      <div class="odds"><div>1<b>2.60</b></div><div>X<b>2.95</b></div><div>2<b>2.80</b></div></div>
+    </div>
+    <div class="mcard">
+      <div class="top"><span>Premier League</span><span>Today 20:00</span></div>
+      <div class="tm"><span>Arsenal</span><b></b></div>
+      <div class="tm"><span>Chelsea</span><b></b></div>
+      <div class="odds"><div>1<b>1.95</b></div><div>X<b>3.60</b></div><div>2<b>3.90</b></div></div>
+    </div>
+    <div class="nav"><span>Sports</span><span>Live</span><span>Casino</span><span>Account</span></div>
+  </div></div>
+
+  <div class="phone p2"><div class="screen">
+    <div class="island"></div>
+    <div class="status"><span>9:41</span><i></i></div>
+    <div class="hdr" style="padding-bottom:10px"><b style="font-size:14px">Casino</b></div>
+    <div class="chips"><span class="on">Crash</span><span>Slots</span><span>Live</span></div>
+    <div class="game"><b>Crash games</b><small>Fast rounds</small><em>2.47x</em>
+      <svg viewBox="0 0 200 60" preserveAspectRatio="none"><defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16b77a" stop-opacity=".6"/><stop offset="1" stop-color="#16b77a" stop-opacity="0"/></linearGradient></defs><path d="M0 60 C 90 58, 140 45, 200 6 L200 60 Z" fill="url(#a)"/><path d="M0 60 C 90 58, 140 45, 200 6" fill="none" stroke="#16b77a" stroke-width="3"/></svg>
+    </div>
+    <div class="game" style="background:linear-gradient(160deg,#2f3846,#1d242e)"><b>Road games</b><small>Step by step</small><em style="color:#f4a62a">x3.00</em></div>
+    <div class="game" style="background:linear-gradient(160deg,#3b6fb5,#122c52)"><b>Tower games</b><small>Build and cash out</small><em>x2.60</em></div>
+    <div class="nav"><span>Sports</span><span>Live</span><span style="color:#16b77a">Casino</span><span>Account</span></div>
+  </div></div>
+
+  <div class="notif"><span class="ic">⚽</span><div><b>Goal! Remo Stars 1–1 Rivers Utd</b><small>NPFL · 54'</small></div></div>
+  <div class="card-float dl">
+    <svg class="shield" viewBox="0 0 80 90"><path d="M40 2 L76 16 V44 C76 68 58 82 40 88 C22 82 4 68 4 44 V16 Z" fill="#16b77a"/><path d="M24 46 L36 58 L58 34" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div><b>Android &amp; iOS</b><small class="muted">Download from the official site</small></div>
+  </div>
+</body></html>
