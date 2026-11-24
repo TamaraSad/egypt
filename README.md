@@ -15,7 +15,7 @@ favicon.svg, robots.txt, sitemap.xml
 ## Где что менять
 - **Промокод** — одна строка в `assets/js/main.js` (`PROMO_CODE`). В HTML он тоже прописан как запасной вариант для браузеров без JS.
 - **Партнёрская ссылка** — во всех кнопках с `rel="sponsored"` в `index.html` (поиск по `reffpa.com`).
-- **Логотип 1xBet** — положите официальный файл в `assets/img/1xbet-logo.svg`; пока его нет, выводится текст «1xBet».
+- **Логотип 1xBet** — `assets/img/1xbet-logo.png` (шапка и подвал). Исходник был маленьким (100×23 px), увеличен ×4. Лучше заменить на официальный SVG/PNG из промо-материалов партнёрской программы.
 - **Домен** — заменить `https://example.com` в `index.html`, `robots.txt`, `sitemap.xml`.
 - **OG-картинка** — `assets/img/og-cover.jpg` (1200×630).
 
