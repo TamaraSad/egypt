@@ -3,12 +3,15 @@
 from build_games import head, foot, esc, crumbs_ld, faq_ld, faq_html, AFF, PROMO, DOMAIN, write
 
 
+RG = "Betting is for people aged 18 and over. Only bet money you can afford to lose, and use deposit limits and self-exclusion in your account if you need them."
+
+
 def promo(prefix):
     return f"""          <div class="promo-card promo-card--compact">
             <div class="promo-card__offer">
               <p class="promo-card__label">New to 1xBet?</p>
               <p class="promo-card__value">Welcome bonus on your first deposit</p>
-              <p class="promo-card__note">Sign up in the app and add the promo code. <a href="{prefix}promo-code/">Bonus terms</a></p>
+              <p class="promo-card__note">Add the promo code when you sign up. <a href="{prefix}promo-code/">Bonus terms</a></p>
             </div>
             <div class="promo-card__code">
               <p class="promo-card__label">Promo code</p>
@@ -206,7 +209,7 @@ def hub():
             + compare + feats + reg + faq("1xBet app FAQ", fq) + cta("Get the 1xBet app", "Get the 1xBet App"))
     return head(p, "1xBet App Nigeria: Download for Android & iPhone (iOS)",
                 "Download the 1xBet app in Nigeria for Android and iPhone: how to get it safely, key features, app vs mobile site and signing up with a promo code.",
-                url, ld, current="app") + body + foot(p)
+                url, ld, current="app") + body + foot(p, rg=RG)
 
 
 # ---------------- ANDROID ----------------
@@ -275,13 +278,13 @@ def android():
                 ("Play Protect warning", "Android may warn about apps from outside Google Play. Only continue if the file came from the official 1xBet site."),
                 ("Not enough storage", "Clear cache or delete unused apps and photos, then install again."),
                 ("App closes or freezes", "Update to the latest version from the official site and restart your phone."),
-                ("Can’t log in", f'Check your login details or reset your password. See the <a href="{p}#login">login guide</a>.'),
+                ("Can’t log in", f'Check your login details or reset your password. See the <a href="{p}login/">login guide</a>.'),
             ], alt=True)
             + faq("1xBet Android app FAQ", fq)
             + cta("Get the 1xBet app for Android", "Download for Android"))
     return head(p, "1xBet APK Download Nigeria: Android App Install Guide",
                 "1xBet app for Android in Nigeria: how to download the 1xBet APK safely from the official site, allow the install, update the app and fix common install errors.",
-                url, ld, current="android") + body + foot(p)
+                url, ld, current="android") + body + foot(p, rg=RG)
 
 
 # ---------------- iOS ----------------
@@ -347,14 +350,14 @@ def ios():
                 ("App not in the App Store", "Your Apple ID may be set to another country. Use the mobile site in Safari instead."),
                 ("Download stuck", "Check your connection and free storage, then tap the app icon to pause and resume."),
                 ("App crashes", "Update the app in the App Store and restart your iPhone."),
-                ("Can’t log in", f'Check your details or reset your password. See the <a href="{p}#login">login guide</a>.'),
+                ("Can’t log in", f'Check your details or reset your password. See the <a href="{p}login/">login guide</a>.'),
                 ("Notifications not showing", "Allow notifications for 1xBet in Settings → Notifications."),
             ], alt=True)
             + faq("1xBet iPhone app FAQ", fq)
             + cta("Get the 1xBet app for iPhone", "Download for iPhone"))
     return head(p, "1xBet App iOS Nigeria: Download for iPhone & iPad",
                 "1xBet app for iPhone in Nigeria: get 1xBet NG from the App Store, iOS 15.0+ requirements, fixes if the app isn’t showing and sign-up with a promo code.",
-                url, ld, current="ios") + body + foot(p)
+                url, ld, current="ios") + body + foot(p, rg=RG)
 
 
 if __name__ == "__main__":

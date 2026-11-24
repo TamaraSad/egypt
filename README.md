@@ -28,7 +28,7 @@ favicon.svg, robots.txt, sitemap.xml
 ```
 python3 design-src/render_mocks.py      # только если меняли макеты design-src/mock-*.html
 python3 design-src/build_games.py       # только если меняли тексты игр
-cd design-src && python3 build_app.py && cd ..   # только если меняли раздел App
+cd design-src && python3 build_app.py && python3 build_login.py && cd ..   # разделы App и Login
 python3 design-src/build_assets.py      # WebP 1x/2x, PNG-заглушки, логотип, *.min.css / *.min.js
 python3 design-src/seo_finalize.py      # schema.org, og/twitter, srcset, подключение .min-файлов
 ```
@@ -38,7 +38,7 @@ python3 design-src/seo_finalize.py      # schema.org, og/twitter, srcset, под
 - У каждой страницы свои title (≤ 60 символов), description (120–160), canonical, Open Graph и Twitter Card.
 - schema.org: WebSite + Organization на всех страницах, WebPage на главной, Article на внутренних,
   BreadcrumbList, FAQPage (совпадает с видимым FAQ), ItemList в разделе Games.
-- `sitemap.xml` (10 URL) и `robots.txt`. Перед запуском замените `https://example.com` на домен во всех файлах.
+- `sitemap.xml` (11 URL) и `robots.txt`. Перед запуском замените `https://example.com` на домен во всех файлах.
 
 ## Размещение
 Любой статический хостинг (GitHub Pages, Netlify, Cloudflare Pages). HTTPS, минификация CSS/JS при сборке.

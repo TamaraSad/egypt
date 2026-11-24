@@ -17,12 +17,12 @@ Registration,how to register on 1xbet,informational,medium,/ #register
 Registration,1xbet create account,transactional,medium,/registration/ (inner page)
 Registration,1xbet registration with phone number,transactional,low,/ #register
 Registration,1xbet one click registration,transactional,low,/ #register
-Login,1xbet login,navigational,high,/ #login → /login/
-Login,1xbet login nigeria,navigational,high,/ #login
-Login,1xbet ng login,navigational,medium,/ #login
-Login,1xbet sign in,navigational,medium,/ #login
-Login,1xbet login with phone number,navigational,low,/ #login
-Login,1xbet forgot password,informational,low,/login/ (inner page)
+Login,1xbet login,navigational,high,/login/
+Login,1xbet login nigeria,navigational,high,/login/
+Login,1xbet ng login,navigational,medium,/login/
+Login,1xbet sign in,navigational,medium,/login/
+Login,1xbet login with phone number,navigational,low,/login/
+Login,1xbet forgot password,informational,low,/login/
 Promo code,1xbet promo code,transactional,high,/promo-code/
 Promo code,1xbet promo code nigeria,transactional,high,/promo-code/
 Promo code,1xbet promo code today,transactional,medium,/promo-code/

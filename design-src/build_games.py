@@ -78,7 +78,7 @@ def head(prefix, title, desc, canonical, ld, current="games"):
           <li><a href="{prefix}registration/">Sign Up</a></li>
           <li><a href="{prefix}promo-code/"{cur("promo")}>Promo Code</a></li>
           <li class="has-sub"><a href="{prefix}app/"{cur("app")}>App</a><button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show app pages"><span aria-hidden="true">▾</span></button><ul class="sub-menu"><li><a href="{prefix}app/android/"{cur("android")}>Android</a></li><li><a href="{prefix}app/ios/"{cur("ios")}>iPhone</a></li></ul></li>
-          <li><a href="{prefix}#login">Login</a></li>
+          <li><a href="{prefix}login/"{cur("login")}>Login</a></li>
           <li><a href="{prefix}games/"{cur("games")}>Games</a></li>
         </ul>
       </nav>
@@ -91,19 +91,19 @@ def head(prefix, title, desc, canonical, ld, current="games"):
 """
 
 
-def foot(prefix, scenes=False):
+def foot(prefix, scenes=False, rg=None):
     scene_js = f'\n  <script src="{prefix}assets/js/game-scenes.js" defer></script>' if scenes else ""
     return f"""
     <section class="section legal" id="legal" aria-labelledby="legal-title">
       <div class="container">
-        <h2 id="legal-title">Play responsibly</h2>
+        <h2 id="legal-title">{"Bet responsibly" if rg else "Play responsibly"}</h2>
         <div class="legal__grid">
           <div class="legal__item">
             <h3><span class="age-badge">18+</span> Adults only</h3>
-            <p>Casino games are for people aged 18 and over. Results are random — only play with money you can afford to lose, and use deposit limits and self-exclusion in your account if you need them.</p>
+            <p>{rg or "Casino games are for people aged 18 and over. Results are random — only play with money you can afford to lose, and use deposit limits and self-exclusion in your account if you need them."}</p>
           </div>
         </div>
-        <p class="disclaimer"><b>Disclaimer:</b> This is an independent guide and is not operated by 1xBet or the game providers. We may earn a commission when you sign up through links on this page. Trademarks belong to their owners. Game availability, limits and RTP can differ by casino — check the game’s info panel before you play.</p>
+        <p class="disclaimer"><b>Disclaimer:</b> This is an independent guide and is not operated by 1xBet{"" if rg else " or the game providers"}. We may earn a commission when you sign up through links on this page. Trademarks belong to their owners.{" Offers, features and terms can change — always check the official 1xBet site." if rg else " Game availability, limits and RTP can differ by casino — check the game’s info panel before you play."}</p>
       </div>
     </section>
   </main>
