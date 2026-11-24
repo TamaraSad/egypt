@@ -38,15 +38,7 @@
         "@id": "https://example.com/#website",
         "url": "https://example.com/",
         "name": "دليل 1xBet مصر",
-        "inLanguage": "ar-EG",
-        "publisher": { "@id": "https://example.com/#org" }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://example.com/#org",
-        "name": "[اسم مالك الموقع]",
-        "url": "https://example.com/",
-        "email": "info@example.com"
+        "inLanguage": "ar-EG"
       },
       {
         "@type": "FAQPage",
@@ -101,6 +93,25 @@
 <body>
   <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
 
+  <!-- Флаг Египта: один символ, используется в первом экране и в подвале -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="flag-eg" viewBox="0 0 900 600">
+      <rect width="900" height="200" fill="#ce1126"/>
+      <rect y="200" width="900" height="200" fill="#ffffff"/>
+      <rect y="400" width="900" height="200" fill="#000000"/>
+      <g fill="#c09300">
+        <circle cx="450" cy="222" r="17"/>
+        <path d="M450 240 L382 252 L352 300 L372 338 L414 322 Z"/>
+        <path d="M450 240 L518 252 L548 300 L528 338 L486 322 Z"/>
+        <rect x="424" y="252" width="52" height="84" rx="6"/>
+        <path d="M414 344 H486 L472 370 H428 Z"/>
+      </g>
+      <rect x="436" y="266" width="28" height="58" rx="3" fill="#ffffff" opacity=".9"/>
+      <rect x="436" y="266" width="28" height="19" fill="#ce1126"/>
+      <rect x="436" y="305" width="28" height="19" fill="#000000"/>
+    </symbol>
+  </svg>
+
   <!-- Плашка 18+ и правовое предупреждение: видны на всех страницах -->
   <div class="legal-bar" role="note">
     <div class="container legal-bar__inner">
@@ -140,7 +151,12 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__text">
-          <p class="eyebrow">دليل معلوماتي مستقل</p>
+          <div class="hero__meta">
+            <span class="flag-wave">
+              <svg class="flag" role="img" aria-label="علم مصر"><use href="#flag-eg"/></svg>
+            </span>
+            <p class="eyebrow">دليل معلوماتي مستقل لمستخدمي مصر</p>
+          </div>
           <h1>1xBet في مصر – معلومات عن الموقع والتطبيق والخدمات</h1>
           <p class="hero__lead">شرح واضح لمنصة 1xBet: أقسام الموقع، التطبيق، تسجيل الدخول، التسجيل، والبرومو كود. وقبل أي خطوة، نوضح لك الوضع القانوني في مصر.</p>
           <div class="hero__actions">
@@ -477,12 +493,6 @@
               <!-- ДОБАВЬТЕ проверенный номер горячей линии помощи при зависимости в Египте -->
               <a href="/responsible-gambling/">مصادر المساعدة</a></p>
           </div>
-          <div class="legal__item">
-            <h3>مالك الموقع والتواصل</h3>
-            <!-- ЗАПОЛНИТЕ реальными данными -->
-            <p>[اسم المالك / الشركة] — [العنوان]<br>
-              البريد: <a href="mailto:info@example.com" dir="ltr">info@example.com</a></p>
-          </div>
         </div>
 
         <p class="disclaimer"><b>إخلاء المسؤولية:</b> هذا الموقع مستقل ولا يرتبط بشركة 1xBet أو أي جهة تابعة لها. المحتوى للمعلومات العامة فقط ولا يُعدّ دعوة للمراهنة أو استشارة قانونية. العلامة التجارية 1xBet ملك لأصحابها.</p>
@@ -492,6 +502,17 @@
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <!-- Логотип 1xBet: положите официальный файл в assets/img/1xbet-logo.svg (при наличии прав на использование) -->
+        <span class="brand-logo">
+          <img src="assets/img/1xbet-logo.svg" alt="1xBet" width="120" height="32">
+        </span>
+        <span class="footer-divider" aria-hidden="true"></span>
+        <span class="footer-country">
+          <svg class="flag flag--sm" role="img" aria-label="علم مصر"><use href="#flag-eg"/></svg>
+          <span>مصر</span>
+        </span>
+      </div>
       <nav aria-label="روابط قانونية">
         <ul>
           <li><a href="/about/">من نحن</a></li>

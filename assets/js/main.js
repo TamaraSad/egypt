@@ -52,6 +52,14 @@
     });
   });
 
+  /* Логотип в подвале: если файла нет, показываем название текстом */
+  var logo = document.querySelector('.brand-logo img');
+  if (logo) {
+    var markMissing = function () { logo.parentNode.classList.add('is-missing'); };
+    if (logo.complete && logo.naturalWidth === 0) markMissing();
+    else logo.addEventListener('error', markMissing);
+  }
+
   /* Текущий год в подвале */
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
