@@ -35,6 +35,9 @@
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
       var open = !item.classList.contains('is-open');
+      document.querySelectorAll('.has-sub.is-open').forEach(function (other) {
+        if (other !== item) { other.classList.remove('is-open'); other.querySelector('.sub-toggle').setAttribute('aria-expanded', 'false'); }
+      });
       item.classList.toggle('is-open', open);
       btn.setAttribute('aria-expanded', String(open));
     });

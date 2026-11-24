@@ -79,7 +79,7 @@ def head(prefix, title, desc, canonical, ld, current="games"):
           <li><a href="{prefix}promo-code/"{cur("promo")}>Promo Code</a></li>
           <li class="has-sub"><a href="{prefix}app/"{cur("app")}>App</a><button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show app pages"><span aria-hidden="true">▾</span></button><ul class="sub-menu"><li><a href="{prefix}app/android/"{cur("android")}>Android</a></li><li><a href="{prefix}app/ios/"{cur("ios")}>iPhone</a></li></ul></li>
           <li><a href="{prefix}login/"{cur("login")}>Login</a></li>
-          <li><a href="{prefix}games/"{cur("games")}>Games</a></li>
+          <li class="has-sub"><a href="{prefix}games/"{cur("games")}>Games</a><button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show game pages"><span aria-hidden="true">▾</span></button><ul class="sub-menu"><li><a href="{prefix}games/aviator/"{cur("aviator")}>Aviator</a></li><li><a href="{prefix}games/chicken-road/"{cur("chicken-road")}>Chicken Road</a></li><li><a href="{prefix}games/tower-rush/"{cur("tower-rush")}>Tower Rush</a></li></ul></li>
         </ul>
       </nav>
 
@@ -422,14 +422,6 @@ def game_page(slug):
       </div>
     </section>
 
-    <section class="section section--alt" id="more" aria-labelledby="more-title">
-      <div class="container">
-        <h2 id="more-title">More games on 1xBet</h2>
-        <div class="game-grid game-grid--2">
-{others}
-        </div>
-      </div>
-    </section>
 
     <section class="cta-band" aria-labelledby="cta-title">
       <div class="container cta-band__inner">
@@ -441,7 +433,7 @@ def game_page(slug):
       </div>
     </section>
 """
-    return head(prefix, g["title"], g["desc"], url, ld) + body + foot(prefix, scenes=True)
+    return head(prefix, g["title"], g["desc"], url, ld, current=slug) + body + foot(prefix, scenes=True)
 
 
 def hub_page():
@@ -473,18 +465,10 @@ def hub_page():
           <a href="{prefix}">1xBet Nigeria</a><span aria-hidden="true">›</span><span aria-current="page">Games</span>
         </nav>
         <h1>1xBet Games Nigeria: Aviator, Chicken Road &amp; Tower Rush</h1>
-        <p class="hero__lead">Fast casino games are some of the most played on 1xBet in Nigeria. Pick a game to see how it works, its RTP, and how to play it on 1xBet.</p>
+        <p class="hero__lead">Fast casino games are some of the most played on 1xBet in Nigeria. Here’s how Aviator, Chicken Road and Tower Rush compare — pick a game from the Games menu for the full guide.</p>
       </div>
     </section>
 
-    <section class="section" id="games" aria-labelledby="games-title">
-      <div class="container">
-        <h2 id="games-title" class="visually-hidden">Games</h2>
-        <div class="game-grid">
-{cards}
-        </div>
-      </div>
-    </section>
 
     <section class="section section--alt" id="compare" aria-labelledby="compare-title">
       <div class="container">
@@ -494,9 +478,9 @@ def hub_page():
             <caption class="visually-hidden">Aviator, Chicken Road and Tower Rush compared</caption>
             <thead><tr><th scope="col">Game</th><th scope="col">Provider</th><th scope="col">How a round works</th><th scope="col">RTP</th></tr></thead>
             <tbody>
-              <tr><th scope="row"><a href="aviator/">Aviator</a></th><td data-label="Provider">Spribe</td><td data-label="How a round works">Plane takes off, cash out before it flies away</td><td data-label="RTP">97%</td></tr>
-              <tr><th scope="row"><a href="chicken-road/">Chicken Road</a></th><td data-label="Provider">InOut Games</td><td data-label="How a round works">Move lane by lane, cash out before the chicken is hit</td><td data-label="RTP">Up to 98%</td></tr>
-              <tr><th scope="row"><a href="tower-rush/">Tower Rush</a></th><td data-label="Provider">Galaxsys</td><td data-label="How a round works">Floors stack up, cash out before the tower falls</td><td data-label="RTP">~97%</td></tr>
+              <tr><th scope="row">Aviator</th><td data-label="Provider">Spribe</td><td data-label="How a round works">Plane takes off, cash out before it flies away</td><td data-label="RTP">97%</td></tr>
+              <tr><th scope="row">Chicken Road</th><td data-label="Provider">InOut Games</td><td data-label="How a round works">Move lane by lane, cash out before the chicken is hit</td><td data-label="RTP">Up to 98%</td></tr>
+              <tr><th scope="row">Tower Rush</th><td data-label="Provider">Galaxsys</td><td data-label="How a round works">Floors stack up, cash out before the tower falls</td><td data-label="RTP">~97%</td></tr>
             </tbody>
           </table>
         </div>

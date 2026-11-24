@@ -192,7 +192,7 @@ def hub():
         ("Live betting &amp; stats", "Follow NPFL, EPL and other games live with odds that update in real time."),
         ("Push notifications", "Get alerts for goals, results and settled bets without opening the app."),
         ("Booking codes", "Load a friend’s betslip or share yours in a couple of taps."),
-        ("Casino &amp; crash games", f'Play slots, live casino and games like <a href="{p}games/aviator/">Aviator</a> in the same app.'),
+        ("Casino &amp; crash games", "Play slots, live casino and crash games like Aviator in the same app."),
         ("Naira deposits &amp; withdrawals", "Deposit and withdraw in ₦ from the cashier inside the app."),
         ("One account everywhere", "Log in with the same details you use on the website."),
     ])

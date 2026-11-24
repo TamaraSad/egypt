@@ -39,10 +39,17 @@ def images():
 
 def min_css(s):
     s = re.sub(r"/\*.*?\*/", "", s, flags=re.S)
+    strings = []  # строки в кавычках не трогаем
+
+    def keep(m):
+        strings.append(m.group(0))
+        return f"\x00{len(strings) - 1}\x00"
+    s = re.sub(r'"[^"]*"|\'[^\']*\'', keep, s)
     s = re.sub(r"\s+", " ", s)
     s = re.sub(r"\s*([{};,>])\s*", r"\1", s)
     s = re.sub(r":\s+", ":", s)  # безопасно: в стилях нет селекторов с пробелом после «:»
     s = s.replace(";}", "}")
+    s = re.sub(r"\x00(\d+)\x00", lambda m: strings[int(m.group(1))], s)
     return s.strip()
 
 

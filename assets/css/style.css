@@ -504,5 +504,5 @@ p { margin: 0 0 1em; }
   .site-nav .sub-menu { position: static; width: 100%; min-width: 0; background: transparent; border: 0; box-shadow: none; padding: 0 0 6px 16px; }
   .site-nav .has-sub.is-open > .sub-menu { display: flex; }
   .site-nav .has-sub.is-open .sub-toggle { transform: rotate(180deg); }
-  .site-nav.is-open { max-height: 640px; }
+  .site-nav.is-open { max-height: 760px; }
 }
